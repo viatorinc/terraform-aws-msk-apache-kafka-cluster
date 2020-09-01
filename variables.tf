@@ -83,11 +83,6 @@ variable "subnet_ids" {
   description = "Subnet IDs for Client Broker"
 }
 
-variable "zone_id" {
-  type        = string
-  description = "Route53 DNS Zone ID for MSK broker hostnames"
-}
-
 variable "security_groups" {
   type        = list(string)
   default     = []

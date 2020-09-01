@@ -33,11 +33,6 @@ output "latest_revision" {
   value       = join("", aws_msk_configuration.config.*.latest_revision)
 }
 
-output "hostname" {
-  description = "MSK Cluster Broker DNS hostname"
-  value       = join("", module.hostname.*.hostname)
-}
-
 output "cluster_name" {
   description = "MSK Cluster name"
   value       = join("", aws_msk_cluster.default.*.cluster_name)
